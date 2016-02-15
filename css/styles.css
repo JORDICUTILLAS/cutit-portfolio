@@ -101,11 +101,10 @@ a:hover{
 }
 
 .active{
-	color:  #8da9a7;
-	background-color: #fec901;
-	color: #000;
-	padding-top: 28px;
-	padding-bottom: 28px;	
+	color:  #fec901;		
+	padding-bottom: 18px;
+	border-bottom: 5px solid #fec901;
+	
 }
 
 nav.fixed {	
@@ -230,11 +229,12 @@ section{
 }
 
 .cite::before { 
-    content: "''";
-    color: #D5C70F;
-    font-size: 100px;
+    content: "\201C";   
+    font-size: 150px;
     color:#000;    
-    float: left;   
+    float: left;
+    font-family: Georgia, "Times New Roman", serif;
+    margin-top: 40px;
 }
 
 .tittleProjects{
