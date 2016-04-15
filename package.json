@@ -1,0 +1,26 @@
+{
+  "name": "cutit-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JORDICUTILLAS/cutit-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JORDICUTILLAS/cutit-portfolio/issues"
+  },
+  "homepage": "https://github.com/JORDICUTILLAS/cutit-portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-sass": "^2.2.0"
+  }
+}

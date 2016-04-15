@@ -1,0 +1,133 @@
+.projects{
+	margin: 0 auto;	
+	width: 100%;
+	max-width: 1366px;	
+	text-align: center;
+	vertical-align: middle;
+	color: #000;
+	overflow: auto;	
+}
+
+.cite::before { 
+    content: "\201C";   
+    font-size: 150px;
+    color:#000;    
+    float: left;
+    font-family: Georgia, "Times New Roman", serif;
+    margin-top: 40px;
+}
+
+
+
+.projectsImg{
+	margin-top: -50px;
+	padding-top: 10px;	
+	width: 100%;
+	max-width: 1366px;	
+	text-align: center;
+	vertical-align: middle;
+	color: #000;
+	overflow: auto;	
+}
+
+.colorBgProjectImg{
+	background-color: #A8A38B;
+	display: table;
+}
+
+.projectsImg img{
+	margin: 0px 1px -3px 0px;
+	-webkit-filter: blur(1px) grayscale(75%);
+	-moz-filter: blur(1px) grayscale(75%);
+	-o-filter: blur(1px) grayscale(75%);
+	filter: blur(1px) grayscale(75%);
+	-webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;   
+}
+
+.projectsImg img:hover{
+	content: "see more";
+	cursor: pointer;
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);
+	-o-filter: blur(0px);
+	filter: blur(0px) grayscale(0%);
+}
+
+.imgWrap {
+  position: relative; 
+  display: inline-table;
+}
+  
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 0px;
+  font-weight: 500;
+  font-size: 25px;
+  -webkit-transition: all 0.5s ease;
+   -moz-transition:all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   transition: all 0.5s ease;
+}
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.shadowImg{
+	-webkit-box-shadow: 0px -4px 5px 2px rgba(0,0,0,0.23);
+	-moz-box-shadow: 0px -4px 5px 2px rgba(0,0,0,0.23);
+	box-shadow: 0px -4px 5px 2px rgba(0,0,0,0.23);
+}
+
+.aplications{
+	    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aplications img{
+	margin-right: 15px;
+}
+
+.colorBgProject{
+	background-color: #fec901;
+}
+
+@media screen and (max-width: 610px) {
+	.aplications{
+		width: 82%;		
+	}
+
+	.aplications img{
+		margin-top: 15px;
+	}
+
+	.imgWrap {
+	 	width: 95%;
+	}
+
+	.projectsImg img{
+		width: 95%;
+	}
+}
+@media screen and (max-width: 430px) {
+	.aplications{
+		width: 86%;
+	}
+}
+

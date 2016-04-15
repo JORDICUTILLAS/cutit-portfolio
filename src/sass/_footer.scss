@@ -1,0 +1,63 @@
+
+
+footer{
+	width: 100%;
+	background-color: #000;
+	height: 100px;
+	padding-top: 10px;
+	padding-bottom: 0;	
+}
+
+.footer{
+	margin: 0 auto;	
+	width: 100%;
+	max-width: 1366px;	
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	overflow: hidden;
+	border-top: 1px dotted #fec901;		
+}
+
+.logoFooter{
+	float:left;
+	width: 9%;
+	height: 100%;
+    line-height: 90px;	
+}
+
+.linkFooter{
+	float:right;
+	width: 45.5%;
+	height: 100%;
+    line-height: 90px;
+    text-align: right;
+}
+
+.linkFooter ul{	
+    line-height: inherit;
+}
+
+@media screen and (max-width: 805px) {
+
+	footer{
+		height: auto;
+	}
+
+	.logoFooter{
+		float: none;
+		margin: 0 auto;
+		width: 100%;
+		line-height: 70px;
+
+	}
+
+	.linkFooter{
+		float: none;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+}
+
+

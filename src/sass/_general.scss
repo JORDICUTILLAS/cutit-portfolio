@@ -1,0 +1,209 @@
+html, body{
+	margin:0 auto;
+	font-family: 'Raleway', sans-serif;
+	font-size:16px;
+	height: 100%;	
+}
+
+
+
+h1 {
+	font-size: 50px;
+	font-weight: 600;
+
+}
+
+h2 {
+	font-size: 42px;
+	font-weight: 100;	
+}
+
+h3 {
+	font-size: 36px;
+	font-weight: 100;
+}
+
+h4 {
+	font-size: 30px;
+	font-weight: 100;	
+}
+
+h5 {
+	font-size: 28px;
+	font-weight: 100;	
+}
+
+h6 {
+	font-size: 22px;
+	font-weight: 100;	
+}
+
+
+ul {
+	text-decoration: none;
+	margin:0 auto;
+	line-height: 75px;
+}
+
+li {
+	color: #fff;
+	font-weight: 100;
+	display: inline-block;
+	padding-right:16px;	
+}
+
+p {	
+	font-size: 16px;	
+	font-weight: 300;
+	line-height: 25px;
+}
+
+a {	
+	color: #fec901;
+	font-weight: 300;
+	text-decoration: none;
+	padding: 3px;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;    
+}
+
+a:hover{
+	color:  #8da9a7;
+	text-decoration: overline;
+}
+
+.active_buttons{
+	color:  #fec901;		
+	padding-bottom: 18px;
+	border-bottom: 5px solid #fec901;
+	
+}
+
+section{	
+	margin: 0 auto;
+	width: 80%;
+	max-width: 1074px;
+	text-align: center;
+	vertical-align: middle;
+	color:#fff;
+	top:0;
+	bottom: 0;
+}
+
+.tittleProjects{
+	float: left;
+	width: 39%;
+	padding: 53px 5% 50px 10%;	
+	box-sizing: border-box;	
+}
+
+
+.contentSections{
+	width:100%;
+	padding-bottom: 50px;
+}
+
+.descriptionSections{
+	text-align: left;
+	float: left;
+	width: 60%;
+	padding: 75px 10% 50px 10%;	
+	box-sizing: border-box;
+}
+
+
+.text-align{
+	text-align: right;
+}
+
+.lineProjects{
+	margin-top: 50px;
+	border-left:3px solid #000; 
+	height: 300px;
+	float: left;
+}
+
+
+
+@media screen and (max-width: 1034px) {
+
+	.descriptionSections{
+		padding: 75px 10% 50px 2%;
+
+	}
+
+	.tittleProjects{
+		padding: 53px 1% 50px 10%;	
+	}
+	
+}
+
+@media screen and (max-width: 934px) {
+
+	.descriptionSections{
+		padding: 75px 5% 50px 2%;
+
+	}
+
+	.tittleProjects{
+		padding: 53px 1% 50px 5%;	
+	}
+
+	h2{
+		font-size: 36px;
+	}
+	
+}
+
+@media screen and (max-width: 779px) {
+
+	h2{
+		font-size: 32px;
+	}
+	
+}
+
+
+
+@media screen and (max-width: 980px) {
+	a{
+	color:#000;
+	    font-weight: bold; 
+	}
+
+	.linkFooter a{
+		color:#fec901;
+	    font-weight: normal; 
+	}
+
+}
+
+@media screen and (max-width: 658px) {
+
+	.tittleProjects, .descriptionSections{
+		float: none;
+		text-align: left;
+		width: 100%;		
+	}
+
+	.lineProjects{
+		margin-top: 0px;
+		border-top:3px solid #000; 
+		height: 1px;
+		width: 60%;
+		float: none;
+		margin-left: 5%;
+	}
+
+	.descriptionSections{
+		padding: 53px 5% 50px 5%;
+	}
+
+	.tittleProjects{
+		padding: 53px 5% 0px 5%;
+	}
+
+}
+

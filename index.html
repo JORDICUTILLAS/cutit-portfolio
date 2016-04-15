@@ -6,7 +6,7 @@
     <title>cutit</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/libs/animate.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="dist/css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,200,500,600,800,900,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -20,8 +20,10 @@
                 <li><a href="#projects">PROYECTOS</a></li>
                 <li><a href="#about">SOBRE MI</a></li>
                 <li><a href="#contact">CONTACTO</a></li>
+                
             </ul>            
         </nav>
+        <a href="#" id="nav-toggle" class="nav-toggle content-nav-toggle"><span></span></a>       
     </header>
     <section class="landingPrincipal wow fadeInDown">
         <h1 class="copyH1"> NO LIMITS</h1>
@@ -175,19 +177,37 @@ experiéncia a los usuarios.</p>
         </script>
  <!-- end efect scroll page -->
 
+ <!-- menu hamburguer-->
+<script type="text/javascript">
+document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
+  this.classList.toggle( "active" );
+});
+
+$("#nav-toggle").click(function () {
+  if($('nav').hasClass('visible')){
+    $('nav').animate({ "right": "-=1180px" }, "fast" ).removeClass('visible');
+  }else{
+
+   $('nav').addClass('visible').animate({ "right": "+=1180px" }, "fast" );
+ }
+});
+</script> 
+
   <!-- efect menu active -->
         <script>
     $(document).ready(function () {
         $(document).on("scroll", onScroll);
  
-        $('a[href^="#"]').on('click', function (e) {
+        $('nav a[href^="#"]').on('click', function (e) {
             e.preventDefault();
             $(document).off("scroll");
  
             $('a').each(function () {
-                $(this).removeClass('active');
+                $(this).removeClass('active_buttons');
+                $('#nav-toggle').removeClass('active_buttons');
             })
-            $(this).addClass('active');
+            $(this).addClass('active_buttons');
+            $('#nav-toggle').removeClass('active_buttons');
  
             var target = this.hash;
             $target = $(target);
@@ -206,15 +226,17 @@ experiéncia a los usuarios.</p>
             var currentLink = $(this);
             var refElement = $(currentLink.attr("href"));
             if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-                $('nav ul li a').removeClass("active");
-                currentLink.addClass("active");
+                $('nav ul li a').removeClass("active_buttons");
+                currentLink.addClass("active_buttons");
             }
             else{
-                currentLink.removeClass("active");
+                currentLink.removeClass("active_buttons");
             }
         });
     }
 </script>
-<!-- end efect menu active -->   
+ <!-- end efect menu active -->
+
+
 </body>
 </html>
