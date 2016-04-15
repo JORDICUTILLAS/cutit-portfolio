@@ -25,3 +25,11 @@ legend{
 	margin-bottom: 10px;	
 	font-size: 16px;	
 }
+
+@media screen and (max-width: 337px) {
+	input[type="text"]{
+		width: 100%;
+		box-sizing: border-box;
+	}
+}
+

@@ -19,3 +19,14 @@
 	height: 300px;
 	float: left;
 }
+
+@media screen and (max-width: 658px) {
+	.lineAbout{
+		margin-top: 0px;
+		border-top:3px solid #fec901; 
+		height: 1px;
+		width: 60%;
+		float: none;
+		margin-left: 5%;
+	}
+}

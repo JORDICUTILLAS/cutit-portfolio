@@ -1,7 +1,6 @@
-nav {
+nav, nav .linkFooter  {
 	margin: 0 auto;
-	margin-top: 25px;
-	background-color: #292929;
+	margin-top: 25px;	
 	text-decoration: none;
 	height: 75px;
 	-webkit-transition: all 0.5s ease;
@@ -16,4 +15,61 @@ nav.fixed {
 
 nav.fixed ul {
 	line-height: 75px;
+}
+
+@media screen and (max-width: 980px) {
+	nav{
+		display: none;
+	}
+
+	nav{
+		 width: 488px;
+	}
+
+	nav{		
+		display: none;
+		position: absolute;
+		right: -1180px;
+		top:80px;
+		width: 30%;
+		color:#000;		
+		width: 100%;
+    	box-sizing:border-box;
+    	z-index: 1;  	
+		  	
+	}	
+
+	li{		
+	display: block;
+    width: 110%;
+    float: right;
+    background-color: rgba(250,199,19,0.6);    
+	}
+
+	.visible{
+		display: table;
+		
+	}
+
+	.linkFooter nav   {
+	margin: 0 auto;
+	margin-top: 25px;	
+	text-decoration: none;
+	height: 75px;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;	
+}
+
+	.linkFooter li{
+	color: #fff;
+    font-weight: 100;
+    display: inline-block;
+    padding-right: 16px;
+    width: auto;
+    background: transparent;
+
+	}
+
 }
