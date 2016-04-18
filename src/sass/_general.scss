@@ -118,13 +118,6 @@ section{
 	text-align: right;
 }
 
-.lineProjects{
-	margin-top: 50px;
-	border-left:3px solid #000; 
-	height: 300px;
-	float: left;
-}
-
 
 
 @media screen and (max-width: 1034px) {
@@ -174,7 +167,7 @@ section{
 	}
 
 	.linkFooter a{
-		color:#fec901;
+		color: $color-yellow;
 	    font-weight: normal; 
 	}
 
@@ -186,16 +179,7 @@ section{
 		float: none;
 		text-align: left;
 		width: 100%;		
-	}
-
-	.lineProjects{
-		margin-top: 0px;
-		border-top:3px solid #000; 
-		height: 1px;
-		width: 60%;
-		float: none;
-		margin-left: 5%;
-	}
+	}	
 
 	.descriptionSections{
 		padding: 53px 5% 50px 5%;
