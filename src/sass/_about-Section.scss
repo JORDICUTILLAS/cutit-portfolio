@@ -1,6 +1,6 @@
 
 .colorBgAbout{
-	background-color: #000;
+	background-color: $color-black;
 }
 
 .about{
@@ -15,7 +15,7 @@
 
 .lineAbout{
 	margin-top: 50px;
-	border-left:3px solid #fec901; 
+	border-left: $ui-separator;
 	height: 300px;
 	float: left;
 }
@@ -23,7 +23,7 @@
 @media screen and (max-width: 658px) {
 	.lineAbout{
 		margin-top: 0px;
-		border-top:3px solid #fec901; 
+		border-top: $ui-separator; 
 		height: 1px;
 		width: 60%;
 		float: none;

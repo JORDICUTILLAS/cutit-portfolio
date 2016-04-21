@@ -22,3 +22,14 @@
 	line-height: 45px;
 	height: auto;
 }
+
+@media screen and (max-width: 980px) {
+	
+	.logo-img{
+		width: 80px;
+	}
+	
+	.logo{
+		padding-top: 5px;
+	}
+}

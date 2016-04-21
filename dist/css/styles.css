@@ -31,7 +31,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../../img/limits.jpg);
+  background-image: url(../img/limits.jpg);
   width: 100%;
   height: 100%;
   min-height: 650px; }
@@ -73,7 +73,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../../img/pont.jpg); }
+  background-image: url(../img/pont.jpg); }
 
 .copyH1 {
   font-size: 100px;
@@ -206,7 +206,8 @@ header.fixed {
 
 @media screen and (max-width: 980px) {
   header {
-    width: 500px; } }
+    width: 500px;
+    height: 60px; } }
 
 @media screen and (max-width: 534px) {
   header {
@@ -310,12 +311,6 @@ section {
 .text-align {
   text-align: right; }
 
-.lineProjects {
-  margin-top: 50px;
-  border-left: 3px solid #000;
-  height: 300px;
-  float: left; }
-
 @media screen and (max-width: 1034px) {
   .descriptionSections {
     padding: 75px 10% 50px 2%; }
@@ -347,13 +342,6 @@ section {
     float: none;
     text-align: left;
     width: 100%; }
-  .lineProjects {
-    margin-top: 0px;
-    border-top: 3px solid #000;
-    height: 1px;
-    width: 60%;
-    float: none;
-    margin-left: 5%; }
   .descriptionSections {
     padding: 53px 5% 50px 5%; }
   .tittleProjects {
@@ -377,6 +365,12 @@ section {
   font-size: 30px;
   line-height: 45px;
   height: auto; }
+
+@media screen and (max-width: 980px) {
+  .logo-img {
+    width: 80px; }
+  .logo {
+    padding-top: 5px; } }
 
 .content-nav-toggle {
   display: none;
@@ -432,7 +426,8 @@ section {
   #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
     display: inherit; }
   .content-nav-toggle {
-    display: inline-block; } }
+    display: inline-block;
+    margin-top: 25px; } }
 
 nav, nav .linkFooter {
   margin: 0 auto;
@@ -457,7 +452,7 @@ nav.fixed ul {
     display: none;
     position: absolute;
     right: -1180px;
-    top: 80px;
+    top: 60px;
     width: 30%;
     color: #000;
     width: 100%;
@@ -467,7 +462,7 @@ nav.fixed ul {
     display: block;
     width: 110%;
     float: right;
-    background-color: rgba(250, 199, 19, 0.6); }
+    background-color: white; }
   .visible {
     display: table; }
   .linkFooter nav {
@@ -571,6 +566,21 @@ nav.fixed ul {
 
 .colorBgProject {
   background-color: #fec901; }
+
+.lineProjects {
+  margin-top: 50px;
+  border-left: 3px solid #000;
+  height: 300px;
+  float: left; }
+
+@media screen and (max-width: 658px) {
+  .lineProjects {
+    margin-top: 0px;
+    border-top: 3px solid #000;
+    height: 1px;
+    width: 60%;
+    float: none;
+    margin-left: 5%; } }
 
 @media screen and (max-width: 610px) {
   .aplications {

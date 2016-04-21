@@ -35,7 +35,7 @@ gulp.task('deploy', function() {
 });
 
 gulp.task('html', function() {
-  return gulp.src('index.html')
+  return gulp.src('src/**/*.html')
   .pipe(validator())
   .pipe(gulp.dest('dist/'));
 });
