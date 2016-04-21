@@ -4,7 +4,7 @@ var autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 var ghPages = require('gulp-gh-pages');
-/*var validator = require('gulp-html');*/
+var validator = require('gulp-html');
 
 
 gulp.task('css', function(){
@@ -34,11 +34,11 @@ gulp.task('deploy', function() {
     .pipe(ghPages());
 });
 
-/*gulp.task('html', function() {
-  return gulp.src('index.html')
+gulp.task('html', function() {
+  return gulp.src('src/**/*.html')
   .pipe(validator())
   .pipe(gulp.dest('dist/'));
-});*/
+});
 
 gulp.task('default', ['css'], function(){
 	gulp.watch('src/sass/**/*.scss',['css']);
