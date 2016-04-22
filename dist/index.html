@@ -48,13 +48,13 @@
             </section>
         </div>
         <div class="contentSections colorBgProjectImg">
-            <section class="projectsImg">
-                <div class="imgWrap"><img src="img/alternativo.jpg" class="shadowImg wow fadeInLeft" alt="protecto arte alternativo"><p class="imgDescription">Arte Alternativo</p></div>
-                <div class="imgWrap"><img src="img/exclusivas.jpg" class="shadowImg wow fadeInRight" alt="protecto sars exclusivas"><p class="imgDescription">sARs Exclusivas</p></div>
-                <div class="imgWrap"><img src="img/barceloc.jpg" class="wow fadeInLeft" alt="protecto barceloc"><p class="imgDescription">Barceloc</p></div>
-                <div class="imgWrap"><img src="img/sars.jpg" class="wow fadeInRight" alt="protecto sars relojes"><p class="imgDescription">sARs Relojes</p></div>
-                <div class="imgWrap"><img src="img/portic.jpg" class="wow fadeInLeft" alt="protecto portic"><p class="imgDescription">Portic S.A. </p></div>
-                <div class="imgWrap"><img src="img/anuncio.jpg" class="wow fadeInRight" alt="protecto imagenes"><p class="imgDescription">Imágenes</p></div>         
+            <section class="projectsImg">                
+                <div class="imgWrap"><a href="http://www.sars-exclusivas.com" target="blank"><img src="img/exclusivas.jpg" class="shadowImg wow fadeInRight" alt="protecto sars exclusivas"></a><p class="imgDescription">sARs Exclusivas</p></div>
+                <div class="imgWrap"><a href="http://www.sars-relojes.com" target="blank"><img src="img/sars.jpg" class="wow fadeInRight" alt="protecto sars relojes"></a><p class="imgDescription">sARs Relojes</p></div>
+                <div class="imgWrap"><a href="http://www.portic.net/disseny/PORTIC%202015/" target="blank"><img src="img/portic.jpg" class="wow fadeInLeft" alt="protecto portic"></a><p class="imgDescription">Portic S.A. </p></div>
+                <div class="imgWrap"><a href="http://app.portic.net/csmf" target="blank"><img src="img/csmf.jpg" class="wow fadeInRight" alt="protecto imagenes"></a><p class="imgDescription">Imágenes</p></div>
+                <div class="imgWrap"><a href="arte/index.html" target="blank"><img src="img/alternativo.jpg" class="shadowImg wow fadeInLeft" alt="protecto arte alternativo"></a><p class="imgDescription">Arte Alternativo</p></div>
+                <div class="imgWrap"><a href="http://www.barceloc.com" target="blank"><img src="img/barceloc.jpg" class="wow fadeInLeft" alt="protecto barceloc"></a><p class="imgDescription">Barceloc</p></div>         
             </section>
         </div>
         <div class="contentSections colorBgAbout">
@@ -103,147 +103,22 @@
                         <img src="img/logo-footer.png" alt="logo cutit">
                     </div>
                     <div class="linkFooter">
-                     <ul>
+                       <ul>
                         <li><a href="#projects">PROYECTOS</a></li>
                         <li><a href="#about">SOBRE MI</a></li>
                         <li><a href="#contact">CONTACTO</a></li>
                     </ul>    
                 </div>
             </div>
-
         </footer>
-
-
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
         <script src="js/wow.js"></script>
-        <script>
-        new WOW().init();
-        wow = new WOW(
-        {
-            boxClass:     'wow',
-            animateClass: 'animated',
-            offset:       20
-        }
-        );
-        </script>    
-        <!-- efect menu fixed -->
-        <script type="text/javascript">
-        jQuery(window).scroll(function () {
-            var threshold = 200;
-            if  (jQuery(window).scrollTop() >= 200)
-                jQuery('header').addClass('fixed');              
-
-            else
-                jQuery('header').removeClass('fixed');
-            var threshold = 200;
-            if  (jQuery(window).scrollTop() >= 200)
-                jQuery('nav').addClass('fixed');              
-
-            else
-                jQuery('nav').removeClass('fixed'); 
-            var threshold = 200;
-            if  (jQuery(window).scrollTop() >= 200)
-                jQuery('#logo').addClass('logo-fixed');             
-
-            else
-                jQuery('#logo').removeClass('logo-fixed');
-            var threshold = 200;
-            if  (jQuery(window).scrollTop() >= 200)
-                jQuery('#logo').removeClass('sign');             
-
-            else
-                jQuery('#logo').addClass('sign');
-        });
-        </script>
-        <!-- end efect menu fixed -->
-
-        <!-- efect scroll page -->
-        <script type="text/javascript">
-        $(function() {
-          $('a[href*="#"]:not([href="#"])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-              if (target.length) {
-                $('html, body').animate({
-                  scrollTop: target.offset().top
-              }, 1000);
-                return false;
-            }
-        }
-    });
-      });
-        </script>
-        <!-- end efect scroll page -->
-
-        <!-- menu hamburguer-->
-        <script type="text/javascript">
-        document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
-          this.classList.toggle( "active" );
-      });
-
-        $("#nav-toggle").click(function () {
-          if($('nav').hasClass('visible')){
-            $('nav').animate({ "right": "-=1180px" }, "fast" ).removeClass('visible');
-        }else{
-
-         $('nav').addClass('visible').animate({ "right": "+=1180px" }, "fast" );
-     }
- });
-        </script> 
-
-        <!-- efect menu active -->
-        <script type="text/javascript">
-        $(document).ready(function () {
-            $(document).on("scroll", onScroll);
-
-            $('nav a[href^="#"]').on('click', function (e) {
-                e.preventDefault();
-                $(document).off("scroll");
-
-                $('a').each(function () {
-                    $(this).removeClass('active_buttons');
-                    $('#nav-toggle').removeClass('active_buttons');
-                })
-                $(this).addClass('active_buttons');
-                $('#nav-toggle').removeClass('active_buttons');
-
-                var target = this.hash;
-                $target = $(target);
-                $('html, body').stop().animate({
-                    'scrollTop': $target.offset().top+2
-                }, 500, 'swing', function () {
-                    window.location.hash = target;
-                    $(document).on("scroll", onScroll);
-                });
-            });
-        });
-
-        function onScroll(event){
-            var scrollPosition = $(document).scrollTop();
-            $('nav a').each(function () {
-                var currentLink = $(this);
-                var refElement = $(currentLink.attr("href"));
-                if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-                    $('nav ul li a').removeClass("active_buttons");
-                    currentLink.addClass("active_buttons");
-                }
-                else{
-                    currentLink.removeClass("active_buttons");
-                }
-            });
-        }
-        </script>
-        <!-- end efect menu active -->
-         <script type="text/javascript">
-
-         $('#nav-toggle').click(function(e){
-            e.preventDefault();
-
-         });
-
-         </script>
-
+        <script src="js/configEfectPage.js"></script>
+        <script src="js/menuFixed.js"></script>
+        <script src="js/scrollTo.js"></script>
+        <script src="js/menuMobile.js"></script>
+        <script src="js/efectMenuSelected.js"></script>
+        <script src="js/preventEvent.js"></script>
     </body>
     </html>

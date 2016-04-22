@@ -1,0 +1,22 @@
+@mixin configSections{
+	margin: 0 auto;	
+	width: 100%;
+	max-width: 1366px;	
+	text-align: center;
+	vertical-align: middle;	
+	overflow: auto;	
+}
+
+@mixin uiLineSeparatorDesktop{
+	margin-top: 50px;	
+	height: 300px;
+	float: left;
+}
+
+@mixin uiLineSeparatorMobile{
+	margin-top: 0px;		 
+	height: 1px;
+	width: 60%;
+	float: none;
+	margin-left: 5%;
+}

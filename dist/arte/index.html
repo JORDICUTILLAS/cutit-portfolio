@@ -1,0 +1,126 @@
+<?php
+// Notificar solamente errores de ejecución 
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+//initialize the session
+if (!isset($_SESSION)) {
+  session_start();
+}
+
+// ** Logout the current user. **
+$logoutAction = $_SERVER['PHP_SELF']."?doLogout=true";
+if ((isset($_SERVER['QUERY_STRING'])) && ($_SERVER['QUERY_STRING'] != "")){
+  $logoutAction .="&". htmlentities($_SERVER['QUERY_STRING']);
+}
+
+if ((isset($_GET['doLogout'])) &&($_GET['doLogout']=="true")){
+  //to fully log out a visitor we need to clear the session varialbles
+  $_SESSION['MM_Username'] = NULL;
+  $_SESSION['MM_UserGroup'] = NULL;
+  $_SESSION['PrevUrl'] = NULL;
+  unset($_SESSION['MM_Username']);
+  unset($_SESSION['MM_UserGroup']);
+  unset($_SESSION['PrevUrl']);
+	
+  $logoutGoTo = "index.php";
+  if ($logoutGoTo) {
+    header("Location: $logoutGoTo");
+    exit;
+  }
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="content-language" content="es" />
+<meta name="language" content="es" />
+<meta name="url" content="http://www.artealternativo.es" />
+<meta name="robots" content="all"/>
+<meta name="revisit-after" content="7 Days">
+<meta name="Distribution" content="global"/>
+<meta name="Rating" content="general" />
+<meta name="mailto" content="arte@artealternativo.es" />
+<meta name="title" content="Arte alternativo" />
+<meta name="description" content="Sube tu obra de arte o manualidades, véndela y quedate con tu dinero, da a conocer el artista que llevas dentro, vende tus manualidades, tus fotografías, tu esculturas, tus lienzos, tus cuadros. Todo lo que sepas hacer, publícalo , ponle precio y véndelo" />
+<meta name="keywords" content="Lienzos, cuadros, obras, manualidades, miniaturas, creatibidad, fotografía, exposiciones, pintura, oleo, spray, acuarela, esculturas" />
+<title>Arte Alternativo</title>
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+<script src="js/modernizr.custom.63321.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="cabecera1"> <div style="margin:0 auto; width:900px;">
+    <div id="logo2" style="float: left;"> Arte alternativo </div>
+    <div id="logo3" style="float: right;"> <br />
+    <a href="registro.php" class="boton"> Registrarse </a>
+    <a href="login.php" class="boton"> Entrar </a>
+      <a href="<?php echo $logoutAction ?>" class="boton">Salir</a>&nbsp;&nbsp;&nbsp;<?php echo $_SESSION['MM_Username']; ?>  </div>
+    <div style="clear:both;"></div>
+  </div>
+</div>
+<div id="menu"><br />
+	<div style="float: left; width:250px;"><br />
+
+    <form style="text-align:left;" action="buscador.php" method="GET" id="buscaenlaweb" name="buscaenlaweb">
+      <input style="width:140px; height:20px;"  title="Se necesita una palabra como mínimo" id="buscatext" type="text" value="Buscador" size="25" name="buscatext" onclick="this.value = ''" required/>
+      <input name="enviar" class="boton" value="" type="submit" id="enviar" onclick="buscaenlaweb.submit()" style=" background-color:#FFF; background-image:url(imagenes/lupa.gif); background-repeat:no-repeat; background-position:center; width:30px;" />
+    </form>
+    </div>
+
+ <a href="index.php"> <br />
+ Inicio </a> <a href="obras.php"> Articulos </a> <a href="categorias.php"> Categorias </a> <a href="exposiciones.php"> Exposiciones </a>  <a href="subir_art.php"> Sube tu obra </a> <a href="gestion.php"> Tus articulos </a> <a href="contacto.php"> Contactar</a></div>
+  <div id="baner">
+  
+  </div>
+
+<div id="contenedor">
+ 
+  <div id="contenido">
+    <div id="ficha">
+      <h2>Regístrate </h2>
+      <br />
+      Regístrate con tus datos de acceso. Es gratis! En un minuto tendrás acceso a tu área de usuario.</div>
+    <div id="ficha">
+      <h2>Sube tu pieza </h2>
+      <br />
+      Accede con tu usuario y contraseña y podrás subir tu pieza y ponerla a la venta. Tambén podrás borrarla cuando quieras.</div>
+    <div id="ficha">
+      <h2>Véndela </h2>
+      <br />
+      Contactarán contigo interesados en tu obra, podrás vendérsela. NO cobramos comisones por hacerlo. El 100% del precio de tu obra va directamente a tu bolsillo.</div>
+    <div style="clear:both;"></div>
+  </div>
+  <br />
+  <footer>
+    <hr />
+    <div style="float:left;">
+    <img src="imagenes/logo_pie.png" /><br />
+    <br />
+       
+      
+    </div>
+    <div style="float:right;"><a href="http://www.facebook.com/sharer.php?u=http://www.artealternativo.es" onClick="window.open(this.href, this.target, 'width=800,height=400'); return false;"><img src="imagenes/face.png" width="39" height="39" alt="facebook" /></a> &nbsp;&nbsp; <a href="http://twitter.com/share" data-url="http://www.artealternativo.es" data-text="Titulo que quiera" data-count="none" data-lang="es" onClick="window.open(this.href, this.target, 'width=800,height=400'); return false;"><img src="imagenes/tuit.png" width="38" height="38" alt="twiter" /></a>
+      <script type=”text/javascript” src=”http://platform.twitter.com/widgets.js”></script>
+      &nbsp;&nbsp; <a href="http://mail.google.com" onClick="window.open(this.href, this.target, 'width=800,height=400'); return false;"><img src="imagenes/gmail.png" width="40" height="40" alt="facebook" /></a> </div>
+    <div id="flotante"> <img src="imagenes/abstracto.png" width="246" height="243" /> </div>
+    <!--<div id="flotante2">	    
+    	<img src="imagenes/jarron.png" width="138" height="205" />
+    </div>-->
+  </footer>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51608545-1', 'artealternativo.es');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

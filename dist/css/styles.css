@@ -3,24 +3,24 @@
   background-color: #000; }
 
 .about {
+  color: #fff;
   margin: 0 auto;
   width: 100%;
   max-width: 1366px;
   text-align: center;
   vertical-align: middle;
-  color: #fff;
   overflow: auto; }
 
 .lineAbout {
-  margin-top: 50px;
   border-left: 3px solid #fec901;
+  margin-top: 50px;
   height: 300px;
   float: left; }
 
 @media screen and (max-width: 658px) {
   .lineAbout {
-    margin-top: 0px;
     border-top: 3px solid #fec901;
+    margin-top: 0px;
     height: 1px;
     width: 60%;
     float: none;
@@ -49,23 +49,27 @@
   margin-top: 67px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
-
-.button-principal:hover {
-  border: 0px;
-  background-color: #fff;
-  color: #000; }
+  .button-principal:hover {
+    border: 0px;
+    background-color: #fff;
+    color: #000; }
 
 .contact .button-principal {
   margin-top: 0px; }
 
+.active_buttons {
+  color: #fec901;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #fec901; }
+
 .contact {
+  color: #fff;
   margin: 0 auto;
   width: 100%;
   max-width: 1366px;
   text-align: center;
   vertical-align: middle;
-  color: #fff;
-  overflow: hidden; }
+  overflow: auto; }
 
 .mainWrapp {
   height: 100%;
@@ -271,15 +275,9 @@ a {
   padding: 3px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
-
-a:hover {
-  color: #8da9a7;
-  text-decoration: overline; }
-
-.active_buttons {
-  color: #fec901;
-  padding-bottom: 18px;
-  border-bottom: 5px solid #fec901; }
+  a:hover {
+    color: #8da9a7;
+    text-decoration: overline; }
 
 section {
   margin: 0 auto;
@@ -358,7 +356,7 @@ section {
 
 .logo-fixed {
   font-size: 30px;
-  line-height: 45px !important;
+  line-height: 45px;
   height: auto; }
 
 .logo-fixed h1 {
@@ -481,12 +479,12 @@ nav.fixed ul {
     background: transparent; } }
 
 .projects {
+  color: #000;
   margin: 0 auto;
   width: 100%;
   max-width: 1366px;
   text-align: center;
   vertical-align: middle;
-  color: #000;
   overflow: auto; }
 
 .cite::before {
@@ -504,8 +502,7 @@ nav.fixed ul {
   max-width: 1366px;
   text-align: center;
   vertical-align: middle;
-  color: #000;
-  overflow: auto; }
+  color: #000; }
 
 .colorBgProjectImg {
   background-color: #A8A38B;
@@ -514,23 +511,23 @@ nav.fixed ul {
 .projectsImg img {
   margin: 0px 1px -3px 0px;
   -webkit-filter: blur(1px) grayscale(75%);
-  -moz-filter: blur(1px) grayscale(75%);
-  -o-filter: blur(1px) grayscale(75%);
-  filter: blur(1px) grayscale(75%);
+          filter: blur(1px) grayscale(75%);
   -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-
-.projectsImg img:hover {
-  content: "see more";
-  cursor: pointer;
-  -webkit-filter: blur(0px);
-  -moz-filter: blur(0px);
-  -o-filter: blur(0px);
-  filter: blur(0px) grayscale(0%); }
+  transition: all 0.5s ease;
+  width: 100%; }
+  .projectsImg img:hover {
+    content: "see more";
+    cursor: pointer;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px) grayscale(0%); }
 
 .imgWrap {
   position: relative;
-  display: inline-table; }
+  display: inline-block;
+  width: 49%;
+  box-sizing: border-box; }
 
 .imgDescription {
   position: absolute;
@@ -568,15 +565,22 @@ nav.fixed ul {
   background-color: #fec901; }
 
 .lineProjects {
-  margin-top: 50px;
   border-left: 3px solid #000;
+  margin-top: 50px;
   height: 300px;
   float: left; }
 
+@media screen and (max-width: 900px) {
+  .imgWrap {
+    display: inline-table;
+    width: auto; }
+  .projectsImg img {
+    width: auto; } }
+
 @media screen and (max-width: 658px) {
   .lineProjects {
-    margin-top: 0px;
     border-top: 3px solid #000;
+    margin-top: 0px;
     height: 1px;
     width: 60%;
     float: none;
