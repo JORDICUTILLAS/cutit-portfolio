@@ -594,7 +594,10 @@ nav.fixed ul {
   .imgWrap {
     width: 95%; }
   .projectsImg img {
-    width: 95%; } }
+    width: 95%; }
+  .imgDescription {
+    width: 96%;
+    margin: 0 auto; } }
 
 @media screen and (max-width: 430px) {
   .aplications {
