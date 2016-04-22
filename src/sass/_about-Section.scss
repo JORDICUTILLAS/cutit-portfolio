@@ -3,30 +3,19 @@
 	background-color: $color-black;
 }
 
-.about{
-	margin: 0 auto;	
-	width: 100%;
-	max-width: 1366px;	
-	text-align: center;
-	vertical-align: middle;
+.about{	
 	color: #fff;
-	overflow: auto;	
+	@include configSections;	
 }
 
-.lineAbout{
-	margin-top: 50px;
-	border-left: $ui-separator;
-	height: 300px;
-	float: left;
+.lineAbout{	
+	border-left: $ui-separator--yellow;
+	@include uiLineSeparatorDesktop;
 }
 
 @media screen and (max-width: 658px) {
-	.lineAbout{
-		margin-top: 0px;
-		border-top: $ui-separator; 
-		height: 1px;
-		width: 60%;
-		float: none;
-		margin-left: 5%;
+	.lineAbout{		
+		border-top: $ui-separator--yellow; 
+		@include uiLineSeparatorMobile;
 	}
 }

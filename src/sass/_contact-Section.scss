@@ -1,11 +1,6 @@
-.contact{
-	margin: 0 auto;	
-	width: 100%;
-	max-width: 1366px;	
-	text-align: center;
-	vertical-align: middle;
+.contact{	
 	color: #fff;
-	overflow: hidden;	
+	@include configSections;
 }
 
 .mainWrapp{	

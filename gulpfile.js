@@ -36,10 +36,11 @@ gulp.task('deploy', function() {
 
 gulp.task('html', function() {
   return gulp.src('src/**/*.html')
-  .pipe(validator())
+  //.pipe(validator())
   .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('default', ['css'], function(){
+gulp.task('default', ['css','html'], function(){
 	gulp.watch('src/sass/**/*.scss',['css']);
+	gulp.watch('src/**/*.html',['html']);
 });

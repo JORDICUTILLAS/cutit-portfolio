@@ -1,11 +1,6 @@
-.projects{
-	margin: 0 auto;	
-	width: 100%;
-	max-width: 1366px;	
-	text-align: center;
-	vertical-align: middle;
+.projects{	
 	color: #000;
-	overflow: auto;	
+	@include configSections;	
 }
 
 .cite::before { 
@@ -26,8 +21,7 @@
 	max-width: 1366px;	
 	text-align: center;
 	vertical-align: middle;
-	color: #000;
-	overflow: auto;	
+	color: #000;	
 }
 
 .colorBgProjectImg{
@@ -36,29 +30,25 @@
 }
 
 .projectsImg img{
-	margin: 0px 1px -3px 0px;
-	-webkit-filter: blur(1px) grayscale(75%);
-	-moz-filter: blur(1px) grayscale(75%);
-	-o-filter: blur(1px) grayscale(75%);
-	filter: blur(1px) grayscale(75%);
-	-webkit-transition: all 0.5s ease;
-    -moz-transition:all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;   
-}
-
-.projectsImg img:hover{
-	content: "see more";
-	cursor: pointer;
-	-webkit-filter: blur(0px);
-	-moz-filter: blur(0px);
-	-o-filter: blur(0px);
-	filter: blur(0px) grayscale(0%);
+	margin: 0px 1px -3px 0px;	
+	filter: blur(1px) grayscale(75%);	
+    transition: all 0.5s ease;
+    width: 100%;
+	    &:hover {
+	    	content: "see more";
+			cursor: pointer;
+			-webkit-filter: blur(0px);
+			-moz-filter: blur(0px);
+			-o-filter: blur(0px);
+			filter: blur(0px) grayscale(0%);
+	    }
 }
 
 .imgWrap {
   position: relative; 
-  display: inline-table;
+  display: inline-block;
+  width: 49%;
+  box-sizing: border-box;
 }
   
 
@@ -75,11 +65,8 @@
   opacity: 0;
   margin-top: 0px;
   font-weight: 500;
-  font-size: 25px;
-  -webkit-transition: all 0.5s ease;
-   -moz-transition:all 0.5s ease;
-   -o-transition: all 0.5s ease;
-   transition: all 0.5s ease;
+  font-size: 25px; 
+  transition: all 0.5s ease;
 }
 
 .imgWrap:hover .imgDescription {
@@ -88,14 +75,12 @@
 }
 
 
-.shadowImg{
-	-webkit-box-shadow: 0px -4px 5px 2px rgba(0,0,0,0.23);
-	-moz-box-shadow: 0px -4px 5px 2px rgba(0,0,0,0.23);
-	box-shadow: 0px -4px 5px 2px rgba(0,0,0,0.23);
+.shadowImg{	
+  box-shadow: 0px -4px 5px 2px rgba(0,0,0,0.23);
 }
 
 .aplications{
-	    width: 100%;
+	width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -105,26 +90,31 @@
 }
 
 .colorBgProject{
-	background-color: #fec901;
+	background-color: $color-yellow;
 }
 
 
-.lineProjects{
-	margin-top: 50px;
-	border-left:3px solid #000; 
-	height: 300px;
-	float: left;
+.lineProjects{	
+	border-left:$ui-separator--black; 
+	@include uiLineSeparatorDesktop;
 }
 
+@media screen and (max-width: 900px) {
+	.imgWrap {	   
+	  display: inline-table;
+	  width: auto;	  
+	}
+
+	.projectsImg img{	
+   	 width: auto;	    
+	}
+
+}
 @media screen and (max-width: 658px) {
 
-	.lineProjects{
-		margin-top: 0px;
-		border-top:3px solid #000; 
-		height: 1px;
-		width: 60%;
-		float: none;
-		margin-left: 5%;
+	.lineProjects{		
+		border-top:$ui-separator--black; 
+		@include uiLineSeparatorMobile;
 	}
 
 }

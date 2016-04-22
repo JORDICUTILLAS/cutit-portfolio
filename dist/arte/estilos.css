@@ -1,0 +1,488 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,html {
+	background-color:#fff;	
+	margin: 0 auto;
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000;
+	
+	
+	}
+#cabecera1{
+	height:55px;
+	width:100%;
+	background-color:#404040;
+	color: #FFF;
+	
+}
+
+#baner{
+	margin:0 auto;
+	width:100%;
+	height: 350px;
+	background-image:url(imagenes/baner3.png);
+	background-repeat: no-repeat;
+	background-position: center center;	
+	}
+#baner2{
+	margin:0 auto;
+	width:100%;
+	height: 100px;
+	background-image:url(imagenes/baner_peq.png);
+	background-repeat: no-repeat;
+	background-position: center center;	
+	}
+
+#baner3{
+	margin:0 auto;
+	width:100%;
+	height: 100px;
+	background-image:url(imagenes/baner_peq_2.png);
+	background-repeat: no-repeat;
+	background-position: center center;	
+	}
+	
+#contenedor{
+	margin:0 auto;
+	text-align:center;
+	padding-top:15px;
+	vertical-align:middle;
+	width: 900px;
+	height: auto;
+	text-align: left;
+		
+	}
+
+#menu{
+	margin:0 auto;
+	width:900px;
+	height:85px;
+	text-align:right;
+	
+	}
+
+#logo2{
+	font-family: 'Nothing You Could Do', cursive;
+	font-size: 40px;
+	font-weight: bold;
+	color: #C00;	
+	
+	}
+	
+#cabecera{
+	margin:0 auto;
+	background-color:#FFF;	
+	vertical-align:middle;
+	width:900px;
+	height: auto;	
+	 }
+	 
+#contenido{
+	margin: 0 auto;
+	text-align:center;
+	}
+#ficha{
+	margin:0 auto;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	margin-left: 20px;
+	float:left;
+	padding:10px;
+	width:250px;
+	height:auto;
+	color: #666;
+	text-decoration: none;
+	text-align: justify;
+}
+
+#expo{
+	margin:0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	padding:10px;
+	width:700px;
+	height:auto;
+	color: #000;
+	text-decoration: none;
+	text-align: justify;
+	background-color: #FFF;
+	border: 1px solid #900;
+	-webkit-box-shadow: 0px 2px 5px #aaa;
+	-moz-box-shadow: 0px 2px 5px #aaa;
+	box-shadow: 0px 2px 5px #aaa;
+	-moz-border-radius:5px; /*Para que funcione en Mozilla*/
+	-khtml-border-radius:5px; /*Para Konqueror y Safari */
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+ #expo hr{
+	border: 1px solid #900;	
+	}
+
+#vendedor{
+	margin:0 auto;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 18px;
+	margin-left: 20px;
+	float:left;
+	padding:10px;
+	width:370px;
+	height:auto;	
+	color: #C00;
+	text-decoration: none;
+	text-align: justify;
+}
+
+h2{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #000;
+	text-align: center;
+	font-size: 18px;
+}
+	
+hr{
+	border: 1px solid #CCC;
+	height: 0.001em;
+	
+	}
+	
+#obras hr { border: 0; height: 1px; background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); }
+
+
+#flotante{
+	position:absolute;
+	z-index:1;
+	top:-20px;
+	left:462px;	
+}
+
+#flotante2{
+	position:absolute;
+	z-index:2;
+	top:5 px;
+	left:612px;
+	
+}
+
+#formulario{
+	width:500px;
+	margin:0 auto;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: #900;
+	text-align:center;
+	}
+	
+#obras{
+	width:900px;
+	margin:0 auto;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	color: #000;
+	text-align:center;
+	
+	}
+
+footer{
+	width:900px;
+	margin: 0 auto;
+	position:relative;
+	z-index:0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 14px;	
+}
+
+
+
+
+#logo3 a:link {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	color: #C00;
+	
+}
+
+#logo3 a:visited {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	color: #C00;
+	text-decoration: none;
+	
+}
+
+#logo3 a:hover {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	color: #000;	
+	
+}
+
+#logo3 a:visited:hover {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	color: #000;	
+}
+
+
+form {
+    margin:0 auto;
+    width:400px;
+}
+
+label {
+	display:block;
+	margin-top:20px;
+	letter-spacing:1px;
+	color: #000;
+	font-size: 14px;
+}
+
+ 
+input, textarea {
+	padding-left:15px;
+	width:300px;
+	height:31px;
+	border:1px solid #CCC;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-size: 14px;
+	color: #000;
+	background-color: #FFF;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	
+}	
+
+.eliminar input{
+	padding-left:15px;
+	width:100px;
+	height:31px;
+	border:1px solid #CCC;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-size: 14px;
+	color: #000;
+	background-color: #FFF;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	cursor:pointer;
+}	
+ 
+textarea {
+    height:150px;
+}
+ 
+.boton {
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+    width:85px;
+    height:35px;
+    border:none;
+    cursor:pointer;
+}
+
+table{
+	text-align:left;
+	
+	/*background: rgba(255, 255, 255, 0.4);*/
+	
+		}
+
+#registros{
+	border:none !important;		
+	background: rgba(255, 255, 255, 0.4);
+	}
+	
+table img{
+	border: 1px solid #CCC;
+	margin:3px;
+	
+	}
+	
+select{
+	background-color: #666;
+	width: 300px;
+	border:1px solid #CCC;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 14px;
+	color: #000;
+	background-color: #FFF;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		}
+.descripcion{
+	font-family: Arial, Helvetica, sans-serif;	
+	font-weight: normal;
+	font-size: 12px;
+	color: #333;
+	
+	}
+
+.articulos{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+		/*border: 1px solid #900;
+	-webkit-box-shadow: 0px 1px 2px #aaa;
+	-moz-box-shadow: 0px 1px 2px #aaa;
+	box-shadow: 0px 1px 2px #aaa;
+	-moz-border-radius:5px; /*Para que funcione en Mozilla*/	/*-khtml-border-radius:5px; /*Para Konqueror y Safari */
+	/*-webkit-border-radius:5px;
+	border-radius:5px;*/
+	}
+
+#cate a:link {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #000;
+	text-align: center;
+	vertical-align:top;	
+	font-size: 14px;	
+	text-decoration: none;	
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+#cate a:visited {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #000;
+	text-decoration: none;
+	
+}
+
+ #cate a:hover {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #900;	
+	
+	
+}
+
+#cate a:visited:hover { 
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #900;
+	text-decoration: none;
+	
+}
+
+.cate{
+	
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #000;
+	text-align: right;
+	vertical-align:top;	
+	font-size: 14px;	
+	text-decoration: none;
+	font-weight: normal;}
+	
+#vendedor input{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #900;
+	height: 20px;
+	width: 150px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background-color: #FFF;
+	border: thin solid #900;
+	}
+.imagenobras{
+	width:85%;
+	}
+
+ a:link {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-right:15px;
+	text-decoration: none;
+	font-size: 13px;
+	color: #C00;
+	
+}
+
+ a:visited {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-right:15px;
+	text-decoration: none;
+	font-size: 13px;
+	color: #C00;
+	text-decoration: none;
+	
+}
+
+ a:hover {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-right:15px;
+	text-decoration: none;
+	font-size: 13px;
+	color: #000;	
+	
+}
+
+a:visited:hover {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-right:15px;
+	text-decoration: none;
+	font-size: 13px;
+	color: #000;	
+}
+
+
+.boton {	
+height:22px;
+text-decoration: none;
+ color: #fff !important;
+ padding: 1px 1px;
+ font-size: 12px !important;
+ border-radius: 5px;
+ background-color: #666666; 
+ position: relative;
+ border-bottom: 1px solid rgba(255,255,255,0.2);
+ display: inline-block;
+ font-family: Arial, Helvetica, sans;
+ text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+}
+
+.boton:hover {
+	color: #F00 !important;
+}
+
+.boton:active {
+ 
+ 
+ color: #fff !important;
+}
+
+.formaBoton {
+ border-radius: 5px;
+ padding-left: 25px;
+ padding-right: 25px;
+}
+
+
+
