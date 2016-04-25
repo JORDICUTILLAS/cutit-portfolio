@@ -1,8 +1,6 @@
 ![LOGO](dist/img/logo.jpg "LOGO") 
-# Style Guide portfolio
 
-
-portfolito personal project BAU (Centro Universitario de Diseño de Barcelona)
+Portfolito personal project BAU (Centro Universitario de Diseño de Barcelona)
 
 ![img no limits](dist/img/no-limits.jpg "preview")
 
