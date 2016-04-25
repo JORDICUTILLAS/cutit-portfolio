@@ -1,4 +1,4 @@
-![LOGO](dist/img/logo.jpg "LOGO") 
+![LOGO](dist/img/logo.png "LOGO") 
 
 Portfolito personal project BAU (Centro Universitario de Diseño de Barcelona)
 
