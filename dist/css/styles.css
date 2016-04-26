@@ -149,6 +149,28 @@ footer {
 .linkFooter ul {
   line-height: inherit; }
 
+@media screen and (max-width: 980px) {
+  .linkFooter li {
+    color: #fff;
+    font-weight: 100;
+    display: inline-block;
+    padding-right: 16px;
+    width: auto;
+    background: transparent;
+    float: none; }
+  .linkFooter li:last-child {
+    padding-right: 0; }
+  .linkFooter nav {
+    margin: 0 auto;
+    margin-top: 25px;
+    text-decoration: none;
+    height: 75px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  .linkFooter ul {
+    text-align: center;
+    padding: 0; } }
+
 @media screen and (max-width: 805px) {
   footer {
     height: auto; }
@@ -462,21 +484,7 @@ nav.fixed ul {
     float: right;
     background-color: white; }
   .visible {
-    display: table; }
-  .linkFooter nav {
-    margin: 0 auto;
-    margin-top: 25px;
-    text-decoration: none;
-    height: 75px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
-  .linkFooter li {
-    color: #fff;
-    font-weight: 100;
-    display: inline-block;
-    padding-right: 16px;
-    width: auto;
-    background: transparent; } }
+    display: table; } }
 
 .projects {
   color: #000;
