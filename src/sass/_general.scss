@@ -5,7 +5,8 @@ html, body{
 	height: 100%;	
 }
 
-
+/* HE ESTILADO ELEMENTOS PORQUE ENTENDÍ MAL LA GUÍA DE ESTILOS, LO COMENTÉ CON NAHUEL, 
+NO ME DA TIEMPO A REFACTORIZAR TODO EL CÓDIGO Y CREAR LAS CLASES PARA TODOS LOS ELEMENTOS*/
 
 h1 {
 	font-size: 50px;
@@ -43,6 +44,7 @@ ul {
 	text-decoration: none;
 	margin:0 auto;
 	line-height: 75px;
+	overflow: hidden;
 }
 
 li {
