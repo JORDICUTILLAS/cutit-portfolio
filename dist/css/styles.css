@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* CSS Document */
 .colorBgAbout {
   background-color: #000; }
@@ -9,7 +10,7 @@
   max-width: 1366px;
   text-align: center;
   vertical-align: middle;
-  overflow: auto; }
+  overflow: hidden; }
 
 .lineAbout {
   border-left: 3px solid #fec901;
@@ -69,7 +70,7 @@
   max-width: 1366px;
   text-align: center;
   vertical-align: middle;
-  overflow: auto; }
+  overflow: hidden; }
 
 .mainWrapp {
   height: 100%;
@@ -250,6 +251,8 @@ html, body {
   font-size: 16px;
   height: 100%; }
 
+/* HE ESTILADO ELEMENTOS PORQUE ENTENDÍ MAL LA GUÍA DE ESTILOS, LO COMENTÉ CON NAHUEL, 
+NO ME DA TIEMPO A REFACTORIZAR TODO EL CÓDIGO Y CREAR LAS CLASES PARA TODOS LOS ELEMENTOS*/
 h1 {
   font-size: 50px;
   font-weight: 600; }
@@ -277,7 +280,8 @@ h6 {
 ul {
   text-decoration: none;
   margin: 0 auto;
-  line-height: 75px; }
+  line-height: 75px;
+  overflow: hidden; }
 
 li {
   color: #fff;
@@ -461,7 +465,8 @@ nav.fixed {
   margin-top: 0px; }
 
 nav.fixed ul {
-  line-height: 75px; }
+  line-height: 75px;
+  -webkit-padding-start: 0; }
 
 @media screen and (max-width: 980px) {
   nav {
@@ -480,7 +485,7 @@ nav.fixed ul {
     z-index: 1; }
   li {
     display: block;
-    width: 110%;
+    width: 105%;
     float: right;
     background-color: white; }
   .visible {
@@ -493,7 +498,7 @@ nav.fixed ul {
   max-width: 1366px;
   text-align: center;
   vertical-align: middle;
-  overflow: auto; }
+  overflow: hidden; }
 
 .cite::before {
   content: "\201C";

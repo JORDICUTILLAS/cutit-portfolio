@@ -10,3 +10,9 @@ $("#nav-toggle").click(function () {
    $('nav').addClass('visible').animate({ "right": "+=1180px" }, "fast" );
  }
 });
+
+$("nav > ul > li > a ").click(function () {
+   $('nav').animate({ "right": "-=1180px" }, "fast" ).removeClass('visible');
+   $("#nav-toggle").removeClass('active');
+ });
+

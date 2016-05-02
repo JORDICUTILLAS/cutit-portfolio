@@ -12,6 +12,7 @@ nav.fixed {
 
 nav.fixed ul {
 	line-height: 75px;
+	-webkit-padding-start: 0;
 }
 
 @media screen and (max-width: 980px) {
@@ -38,7 +39,7 @@ nav.fixed ul {
 
 	li{		
 	display: block;
-    width: 110%;
+    width: 105%;
     float: right;
     background-color: rgb(255,255,255);    
 	}
